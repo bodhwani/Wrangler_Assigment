@@ -1,15 +1,3 @@
-// addEventListener('fetch', event => {
-//   event.respondWith(handleRequest(event.request))
-// })
-// /**
-//  * Respond with hello worker text
-//  * @param {Request} request
-//  */
-// async function handleRequest(request) {
-//   return new Response('Hello worker!', {
-//     headers: { 'content-type': 'text/plain' },
-//   })
-// }
 addEventListener("fetch", event => {
   const links =[
     {
@@ -20,10 +8,7 @@ addEventListener("fetch", event => {
         "name": "Linkedin" ,
         "url" : "https://www.linkedin.com/in/niranjaniwagh/"
     },
-    {
-        "name": "Portfolio" ,
-        "url" : "https://niranjani29.github.io/"
-    },
+    
   ]
   const json = JSON.stringify(links, null, 2)
 
